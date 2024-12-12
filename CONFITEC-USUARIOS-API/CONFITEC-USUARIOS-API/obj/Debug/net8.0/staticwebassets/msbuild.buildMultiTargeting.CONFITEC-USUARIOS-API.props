@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CONFITEC-USUARIOS-API.props" />
+</Project>
