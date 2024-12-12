@@ -1,0 +1,25 @@
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Email</th>
+        <th>Data de Nascimento</th>
+        <th>Escolaridade</th>
+        <th></th>
+    </tr>
+
+    @for (item of (usuarios$ | async); track item) {
+        <tr>
+            <td>{{item.nome}}</td>
+            <td>{{item.sobrenome}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.dataNascimento | date: 'dd/MM/yyyy' }}</td>
+            <td>{{item.escolaridade}}</td>
+            <td>-- Editar --</td>
+            <td>-- Excluir --</td>
+        </tr>
+    }
+
+</table>
+
+
